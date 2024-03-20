@@ -13,19 +13,39 @@
 			<!-- Stackpanel for entire grid -->
 			<StackPanel>
 				<!-- Stackpanel for title -->
-				<TextBlock x:Name="mortgageCalculatorTitle" Text="Mortgage Calculator" Height="100" Margin="10" FontSize="50" TextWrapping="Wrap" FontWeight="Bold" HorizontalAlignment="Center"/>
+				<TextBlock x:Name="mortgageCalculatorTitle" Text="Mortgage Calculator" Height="80" Margin="10" FontSize="50" TextWrapping="Wrap" FontWeight="Bold" HorizontalAlignment="Center"/>
 			</StackPanel>
-			<StackPanel Orientation="Horizontal">
+			<StackPanel Orientation="Vertical" HorizontalAlignment="Center">
 				<!-- Stackpanel for fields -->
-				<StackPanel Orientation="Vertical">
-					<TextBox x:Name="borrowBox" Text="Principal borrow $:" Margin="10"/>
+				<StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+					<TextBlock x:Name="borrowTextBlock" Text="Principal borrow $:" Margin="10" HorizontalAlignment="Right"/>
+					<TextBox x:Name="borrowTextBox" Margin="10" HorizontalAlignment="Left" Width="200"/>
 				</StackPanel>
-				<StackPanel Orientation="Vertical">
-					
+				<StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+					<TextBlock x:Name="yearsTextBlock" Text="Years:" Margin="10" HorizontalAlignment="Right"/>
+					<TextBox x:Name="yearsTextBox" Margin="10" HorizontalAlignment="Left" Width="200"/>
+				</StackPanel>
+				<StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+					<TextBlock x:Name="monthsTextBlock" Text="and Months:" Margin="10" HorizontalAlignment="Right"/>
+					<TextBox x:Name="monthsTextBox" Margin="10" HorizontalAlignment="Left" Width="200"/>
+				</StackPanel>
+				<StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+					<TextBlock x:Name="yearlyInterestTextBlock" Text="Yearly Interest Rate %:" Margin="10" HorizontalAlignment="Right"/>
+					<TextBox x:Name="yearlyInterestTextBox" Margin="10" HorizontalAlignment="Left" Width="200"/>
+				</StackPanel>
+				<StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+					<TextBlock x:Name="monthlyInterestTextBlock" Text="Monthly Interest Rate %:" Margin="10" HorizontalAlignment="Right"/>
+					<TextBox x:Name="monthlyInterestTextBox" Margin="10" HorizontalAlignment="Left" Width="200"/>
+				</StackPanel>
+				<StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+					<TextBlock x:Name="repaymentTextBlock" Text="Monthly Repayment $:" Margin="10" HorizontalAlignment="Right"/>
+					<TextBox x:Name="repaymentTextBox" Margin="10" HorizontalAlignment="Left" Width="200"/>
 				</StackPanel>
 			</StackPanel>
-			<StackPanel Orientation="Vertical">
+			<StackPanel Orientation="Vertical" HorizontalAlignment="Center">
 				<!-- Stackpanel for buttons -->
+				<Button x:Name="calculateButton" Content="Calculate" FontSize="30" BorderBrush="Black" BorderThickness="1" Background="LightBlue" Margin="10" HorizontalAlignment="Center" VerticalAlignment="Top" Height="50" Width="150" Click="calculateButton_Click"/>
+				<Button x:Name="exitButton" Content="Exit" FontSize="30" BorderBrush="Black" BorderThickness="1" Background="LightBlue" Margin="10" HorizontalAlignment="Center" VerticalAlignment="Top" Height="50" Width="150" Click="exitButton_Click"/>
 			</StackPanel>
 		</StackPanel>
     </Grid>

@@ -39,7 +39,7 @@ namespace Calculator
 
 		private void currencyConverterButton_Click(object sender, RoutedEventArgs e)
 		{
-
+			Frame.Navigate(typeof(CurrencyConverter)); // Navigate to Currency Converter page
 		}
 
 		private void exitButton_Click(object sender, RoutedEventArgs e)

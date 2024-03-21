@@ -102,5 +102,15 @@ namespace Calculator
 			// Default conversion rate (if currencies are not found)
 			return 1.0;
 		}
+
+		private void txtAmount_TextChanged(object sender, TextChangedEventArgs e)
+		{
+
+        }
+
+		private void cmbFrom_SelectionChanged(object sender, SelectionChangedEventArgs e)
+		{
+
+		}
 	}
 }

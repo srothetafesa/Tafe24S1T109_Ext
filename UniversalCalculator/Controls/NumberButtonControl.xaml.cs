@@ -21,7 +21,8 @@ namespace Calculator.Controls
 		}
 
 		// handle functions
-		private void handleClick(object sender, RoutedEventArgs e) {
+		private void handleClick(object sender, RoutedEventArgs e)
+		{
 			Utils.Utils.handleClick((string)(sender as Button).Content);
 		}
 	}

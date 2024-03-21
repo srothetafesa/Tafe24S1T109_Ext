@@ -8,7 +8,7 @@ namespace Calculator.Utils
 	public static class Utils
 	{
 		// Executed an arithematic expresssion   e.g. 2 + 3 * 4
-		private static double executeExpression(string text)							// KT changed int to double
+		private static double executeExpression(string text)                            // KT changed int to double
 		{
 			string number = new DataTable().Compute(text, "").ToString();
 			double numberDouble = Convert.ToDouble(number);

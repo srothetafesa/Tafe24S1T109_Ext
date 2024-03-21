@@ -32,6 +32,12 @@ namespace Calculator
 			Frame.Navigate(typeof(CurrencyConverter)); // Navigate to Currency Converter page
 		}
 
+		private void tripCalculatorButton_Click(object sender, RoutedEventArgs e)
+		{
+			// Display message
+			var dialog = new Windows.UI.Popups.MessageDialog("Trip calculator C# code will be developed later");
+			dialog.ShowAsync();
+		}
 		private void exitButton_Click(object sender, RoutedEventArgs e)
 		{
 			CoreApplication.Exit();

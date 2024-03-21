@@ -20,6 +20,7 @@
 				<Button x:Name="mathsCalculatorButton" Content="Maths Calculator" FontSize="30" BorderBrush="Black" BorderThickness="1" Background="LightBlue" Margin="10" HorizontalAlignment="Center" VerticalAlignment="Top" Height="100" Width="300" Click="mathsCalculatorButton_Click"/>
 				<Button x:Name="mortgageCalculatorButton" Content="Mortgage Calculator" FontSize="30" BorderBrush="Black" BorderThickness="1" Background="LightBlue" Margin="10" HorizontalAlignment="Center" VerticalAlignment="Top" Height="100" Width="300" Click="mortgageCalculatorButton_Click"/>
 				<Button x:Name="currencyConverterButton" Content="Currency Converter" FontSize="30" BorderBrush="Black" BorderThickness="1" Background="LightBlue" Margin="10" HorizontalAlignment="Center" VerticalAlignment="Top" Height="100" Width="300" Click="currencyConverterButton_Click"/>
+				<Button x:Name="tripCalculatorButton" Content="Trip Calculator" FontSize="30" BorderBrush="Black" BorderThickness="1" Background="LightBlue" Margin="10" HorizontalAlignment="Center" VerticalAlignment="Top" Height="100" Width="300" Click="tripCalculatorButton_Click"/>
 				<Button x:Name="exitButton" Content="Exit" FontSize="30" BorderBrush="Black" BorderThickness="1" Background="LightBlue" Margin="10" HorizontalAlignment="Center" VerticalAlignment="Top" Height="100" Width="300" Click="exitButton_Click"/>
 			</StackPanel>
 		</StackPanel>
